@@ -1,0 +1,12 @@
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.AssemblyInfoInputs.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.AssemblyInfo.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.csproj.CoreCompileInputs.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.dll
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.pdb
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\bin\Debug\netcoreapp3.1\MyBooks.Entity.deps.json
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\bin\Debug\netcoreapp3.1\MyBooks.Entity.runtimeconfig.json
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\bin\Debug\netcoreapp3.1\MyBooks.Entity.runtimeconfig.dev.json
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\bin\Debug\netcoreapp3.1\MyBooks.Entity.dll
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\bin\Debug\netcoreapp3.1\MyBooks.Entity.pdb
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.genruntimeconfig.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Entity\obj\Debug\netcoreapp3.1\MyBooks.Entity.csprojAssemblyReference.cache
