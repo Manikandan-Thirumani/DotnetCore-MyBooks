@@ -83,7 +83,18 @@ namespace MyBooks.Data.Migrations
 
                     b.HasKey("BookId");
 
+                    b.HasIndex("BookAuthorId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("MyBooks.Entity.Books.Books", b =>
+                {
+                    b.HasOne("MyBooks.Entity.Authors.Authors", "Authors")
+                        .WithMany("Books")
+                        .HasForeignKey("BookAuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

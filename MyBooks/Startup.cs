@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyBooks.Data.BooksRepository;
 
 namespace MyBooks
 {
@@ -26,8 +27,10 @@ namespace MyBooks
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MyBooksDBContext>(options => options.UseSqlServer("Server= localhost; Database= MyBooks; Integrated Security=True;"));
+            string connString = this.Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<MyBooksDBContext>(options => options.UseSqlServer(connString));
             services.AddScoped<IAuthorsRepository, AuthorsRepository>();
+            services.AddScoped<IBooksRepository, BooksRepository>();
             services.AddRazorPages();
         }
 

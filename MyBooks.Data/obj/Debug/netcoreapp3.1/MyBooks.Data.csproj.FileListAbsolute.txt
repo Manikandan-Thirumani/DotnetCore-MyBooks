@@ -5,7 +5,8 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\bin\Debug\netcoreapp3.1\M
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\bin\Debug\netcoreapp3.1\MyBooks.Data.pdb
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\bin\Debug\netcoreapp3.1\MyBooks.Entity.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\bin\Debug\netcoreapp3.1\MyBooks.Entity.pdb
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.csprojAssemblyReference.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.csproj.AssemblyReference.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.AssemblyInfoInputs.cache
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.AssemblyInfo.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks.Data\obj\Debug\netcoreapp3.1\MyBooks.Data.csproj.CoreCompileInputs.cache
