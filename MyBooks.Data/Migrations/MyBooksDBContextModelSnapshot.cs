@@ -37,7 +37,7 @@ namespace MyBooks.Data.Migrations
 
             modelBuilder.Entity("MyBooks.Entity.BookOrders.BookOrders", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("OrdersId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -55,10 +55,10 @@ namespace MyBooks.Data.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<decimal>("OrderCost")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("OrdersId");
 
                     b.ToTable("BookOrders");
                 });

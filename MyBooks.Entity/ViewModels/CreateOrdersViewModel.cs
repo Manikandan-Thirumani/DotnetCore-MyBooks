@@ -1,20 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace MyBooks.Entity.BookOrders
+namespace MyBooks.Entity.ViewModels
 {
-   public class BookOrders
+    public class CreateOrdersViewModel
     {
-        [Required]
-        [Key]
-        public int OrdersId { get; set; }
-
-        [Required]
-        public int OrderId { get; set; }
-        [Required]
         public int BookId { get; set; }
         [Required]
         [MaxLength(100)]
@@ -23,5 +15,6 @@ namespace MyBooks.Entity.BookOrders
         [MaxLength(1000)]
         public string CustomerAddress { get; set; }
 
+        public List<Books.Books> CartBooks { get; set; }
     }
 }

@@ -9,15 +9,15 @@ using MyBooks.Data;
 namespace MyBooks.Data.Migrations
 {
     [DbContext(typeof(MyBooksDBContext))]
-    [Migration("20210925181812_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20211005114103_third")]
+    partial class third
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .HasAnnotation("ProductVersion", "3.1.18")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("MyBooks.Entity.Authors.Authors", b =>
@@ -27,10 +27,10 @@ namespace MyBooks.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("MyProperty")
+                    b.Property<string>("AuthorName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("AuthorId");
 
@@ -39,7 +39,7 @@ namespace MyBooks.Data.Migrations
 
             modelBuilder.Entity("MyBooks.Entity.BookOrders.BookOrders", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("OrdersId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -49,18 +49,18 @@ namespace MyBooks.Data.Migrations
 
                     b.Property<string>("CustomerAddress")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1000);
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
-                    b.Property<decimal>("OrderCost")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("OrdersId");
 
                     b.ToTable("BookOrders");
                 });
@@ -77,15 +77,26 @@ namespace MyBooks.Data.Migrations
 
                     b.Property<string>("BookName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("BookId");
 
+                    b.HasIndex("BookAuthorId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("MyBooks.Entity.Books.Books", b =>
+                {
+                    b.HasOne("MyBooks.Entity.Authors.Authors", "Authors")
+                        .WithMany("Books")
+                        .HasForeignKey("BookAuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

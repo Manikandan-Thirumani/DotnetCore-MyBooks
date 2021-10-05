@@ -17,6 +17,10 @@ namespace MyBooks.Data
 
         public DbSet<BookOrders> BookOrders { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+           // modelBuilder.Entity<BookOrders>().HasNoKey();
+        }
 
     }
 }
