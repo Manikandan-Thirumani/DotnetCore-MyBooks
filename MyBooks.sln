@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBooks.Entity", "MyBooks.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBooks.Data", "MyBooks.Data\MyBooks.Data.csproj", "{78C5E2FF-6D73-479B-81B5-2E49CE327142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Others", "Others\Others.csproj", "{B1179F32-0852-46FF-A634-4FD966299282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Others", "Others\Others.csproj", "{B1179F32-0852-46FF-A634-4FD966299282}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

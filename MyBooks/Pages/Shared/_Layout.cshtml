@@ -8,47 +8,47 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="~/images/bookstore.jpg" style="width: 100px; height: 100px;"/>
-            <a class="navbar-brand" asp-page="/Index">My Book Store</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="~/images/bookstore.jpg" style="width: 100px; height: 100px;"/>
+        <a class="navbar-brand" asp-page="/Index">My Book Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" asp-page="/Index">Home </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" asp-page="/Index">Home </a>
 
-                        @*<a class="nav-link" href="#">Home <span class="sr-only" asp-page="/Index">(current)</span></a>*@
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Masters
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="nav-link" asp-page="/AuthorsMaster/Index">Authors</a>
+                    @*<a class="nav-link" href="#">Home <span class="sr-only" asp-page="/Index">(current)</span></a>*@
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Masters
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link" asp-page="/AuthorsMaster/Index">Authors</a>
 
-                            <a class="nav-link" asp-page="/BooksMaster/Index">Books</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Transactions
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="nav-link" asp-page="/OrderBooks/Create">Order Books</a>
-                        </div>
-                    </li>
-                </ul>
-                @*<form class="form-inline my-2 my-lg-0">
+                        <a class="nav-link" asp-page="/BooksMaster/Index">Books</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transactions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link" asp-page="/OrderBooks/Create">Order Books</a>
+                    </div>
+                </li>
+            </ul>
+            @*<form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>*@
-            </div>
-        </nav>
-        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        </div>
+    </nav>
+    @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">MyBooks</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -78,12 +78,21 @@
 
 
         </nav>*@
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+</header>
+<welcome-message name="@MyBooks.Entity.Global.GlobalVariables.UserName"></welcome-message>
+<div class="col-md-12">
+    @*@await Component.InvokeAsync("BookStatistics")*@
+    <vc:book-statistics></vc:book-statistics>
+</div>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+@*<div class="col-md-12">
+    @await  Component.InvokeAsync("BookStatistics")
+    <vc:book-statistics></vc:book-statistics>
+</div>*@
 
     <footer class="border-top footer text-muted">
         <div class="container">

@@ -1,0 +1,16 @@
+﻿@model MyBooks.Entity.ViewModels.StatisticsViewModel
+    <marquee>
+        <div class="col-md-12">
+            <div class="form-group">
+                <div class="row">
+                    <div style="margin-right: 10px;">@Model.AuthorsCount</div> Authors available.
+                </div>
+                <div class="row">
+                    <div style="margin-right: 10px;">@Model.BooksCount</div> Books available.
+                </div>
+                <div class="row">
+                    <div style="margin-right: 10px;">@Model.OrdersCount</div> Orders available.
+                </div>
+            </div>
+        </div>
+    </marquee>

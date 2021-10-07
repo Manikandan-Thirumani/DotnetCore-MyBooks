@@ -1,0 +1,10 @@
+C:\manikandanT\My-leaining\Source\MyBooks\Others\bin\Debug\netcoreapp3.1\Others.deps.json
+C:\manikandanT\My-leaining\Source\MyBooks\Others\bin\Debug\netcoreapp3.1\Others.dll
+C:\manikandanT\My-leaining\Source\MyBooks\Others\bin\Debug\netcoreapp3.1\Others.pdb
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.csproj.AssemblyReference.cache
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.GeneratedMSBuildEditorConfig.editorconfig
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.AssemblyInfoInputs.cache
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.AssemblyInfo.cs
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.csproj.CoreCompileInputs.cache
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.dll
+C:\manikandanT\My-leaining\Source\MyBooks\Others\obj\Debug\netcoreapp3.1\Others.pdb

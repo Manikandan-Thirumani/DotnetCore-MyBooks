@@ -20,6 +20,12 @@ namespace MyBooks.Data.AuthorsRepository
             await Commit();
         }
 
+        public async Task<int> AuthorsCount()
+        {
+          return   await _context.Authors.CountAsync();
+
+        }
+
         public async Task Commit()
         {
             await _context.SaveChangesAsync();

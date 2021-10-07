@@ -13,6 +13,7 @@ namespace MyBooks.Data.AuthorsRepository
         Task<Authors> GetAuthorsById(int id);
         Task DeletAuthor(int id);
         Task UpdateAuthors(Authors author);
+        Task<int> AuthorsCount();
         Task Commit();
 
 

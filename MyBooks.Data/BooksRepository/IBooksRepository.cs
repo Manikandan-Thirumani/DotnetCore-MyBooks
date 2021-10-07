@@ -13,6 +13,7 @@ namespace MyBooks.Data.BooksRepository
         Task<Books> GetBooksById(int id);
         Task DeleteBook(int id);
         Task UpdateBooks(Books author);
+        Task<int> GetBooksCount();
         Task Commit();
     }
 }

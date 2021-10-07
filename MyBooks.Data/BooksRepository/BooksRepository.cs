@@ -42,6 +42,12 @@ namespace MyBooks.Data.BooksRepository
             return await _context.Books.Include(x=>x.Authors).FirstOrDefaultAsync(m => m.BookId == id);
         }
 
+        public async Task<int> GetBooksCount()
+        {
+            return await _context.Books.CountAsync();
+
+        }
+
         public async Task UpdateBooks(Books author)
         {
             _context.Attach(author).State = EntityState.Modified;

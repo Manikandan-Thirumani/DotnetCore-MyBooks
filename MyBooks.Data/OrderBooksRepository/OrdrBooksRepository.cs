@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MyBooks.Entity.BookOrders;
 
 namespace MyBooks.Data.OrderBooksRepository
@@ -32,6 +33,12 @@ namespace MyBooks.Data.OrderBooksRepository
                 await Commit();
             }
         }
+
+        public async Task<int> GetOrdersCount()
+        {
+            return await _context.BookOrders.CountAsync();
+        }
+
         private async Task Commit()
         {
             await _context.SaveChangesAsync();

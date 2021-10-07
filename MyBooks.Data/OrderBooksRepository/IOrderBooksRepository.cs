@@ -9,5 +9,6 @@ namespace MyBooks.Data.OrderBooksRepository
   public  interface IOrderBooksRepository
   {
       Task CreateOrders(CreateOrdersViewModel _createOrdersViewModel);
+      Task<int> GetOrdersCount();
   }
 }
