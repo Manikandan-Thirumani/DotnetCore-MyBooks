@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using MyBooks.Data.BooksRepository;
 using MyBooks.Data.OrderBooksRepository;
 
@@ -40,6 +42,35 @@ namespace MyBooks
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
             });
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.ConsentCookie.IsEssential = true;
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => false;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+            services.AddAuthentication(options =>
+                {
+                    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                })
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+                {
+                    options.Cookie.IsEssential = true;
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                    options.Cookie.SameSite = SameSiteMode.None;
+
+                    options.Cookie.Name = CookieAuthenticationDefaults.AuthenticationScheme;
+                    options.LoginPath = "/account/google-login";
+
+                })
+                .AddGoogle(options =>
+                {
+                    options.ClientId = "177635740346-egfevtm6uknr8bergpkql8hedgotio4u.apps.googleusercontent.com";
+                    options.ClientSecret = "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";
+                    // options.CallbackPath= "/google-auth-callback"; ;
+                });
             services.AddRazorPages();
             
         }
@@ -63,7 +94,7 @@ namespace MyBooks
 
             app.UseRouting();
             app.UseSession();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

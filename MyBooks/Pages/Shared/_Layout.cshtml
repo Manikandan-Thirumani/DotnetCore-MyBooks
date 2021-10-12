@@ -41,6 +41,15 @@
                         <a class="nav-link" asp-page="/OrderBooks/Create">Order Books</a>
                     </div>
                 </li>
+                @if (Context.User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="javascript:;">Hello @User.Identity.Name!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/account/SignOut">SignOut</a>
+                    </li>
+                }
             </ul>
             @*<form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

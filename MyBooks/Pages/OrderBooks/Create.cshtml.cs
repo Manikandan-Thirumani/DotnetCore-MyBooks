@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyBooks.Data.OrderBooksRepository;
@@ -13,6 +14,8 @@ using MyBooks.Entity.ViewModels;
 
 namespace MyBooks.Pages.OrderBooks
 {
+    [Authorize]
+
     public class CreateModel : PageModel
     {
         private readonly IBooksRepository _booksrepo;

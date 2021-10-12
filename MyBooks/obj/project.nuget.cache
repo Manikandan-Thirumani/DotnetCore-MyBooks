@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rYDNqpl97KwLHXZL+K+/V7DGAmSlm/oUYAXmG+oO/J2zSU8CbAwLCgKcciYLsUEAv6kbLJDeOp0a6evI+JqGNQ==",
+  "dgSpecHash": "XmUOBhM2j3FGrJMWLpSkyWwzvreUjZ4GF9o0ra/Bmuumj2WBf33xt0Zmt2wTF6BWvEdzLiM9HuAQJObFJSkuDw==",
   "success": true,
   "projectFilePath": "C:\\manikandanT\\My-leaining\\Source\\MyBooks\\MyBooks\\MyBooks.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mthirumani\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.6\\microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512",
     "C:\\Users\\mthirumani\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\mthirumani\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
     "C:\\Users\\mthirumani\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\2.2.0\\microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg.sha512",

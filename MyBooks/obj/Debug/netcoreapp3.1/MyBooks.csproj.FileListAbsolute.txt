@@ -185,3 +185,7 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBook
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.genruntimeconfig.cache
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\OrderBooks\Create.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Components\BookStatistics\default.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-login.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-response.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\SignOut.cshtml.g.cs
