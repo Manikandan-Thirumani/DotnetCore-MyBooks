@@ -13,8 +13,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using MyBooks.CommonHelpers;
 using MyBooks.Data.BooksRepository;
 using MyBooks.Data.OrderBooksRepository;
+using MyBooks.Entity.Authors;
+using MyBooks.Entity.Books;
 
 namespace MyBooks
 {
@@ -36,6 +39,9 @@ namespace MyBooks
             services.AddScoped<IAuthorsRepository, AuthorsRepository>();
             services.AddScoped<IBooksRepository, BooksRepository>();
             services.AddScoped<IOrderBooksRepository, OrderBooksRepository>();
+            services.AddScoped<IWebApiConsumerHelper<IList<Authors>>, WebApiConsumerHelper<IList<Authors>>>();
+            services.AddScoped<IWebApiConsumerHelper<Authors>, WebApiConsumerHelper<Authors>>();
+            services.AddScoped<IWebApiConsumerHelper<Books>, WebApiConsumerHelper<Books>>();
             services.AddHttpContextAccessor();
             services.AddMemoryCache();
 

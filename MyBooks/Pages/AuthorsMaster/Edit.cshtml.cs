@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MyBooks.CommonHelpers;
 using MyBooks.Data;
 using MyBooks.Data.AuthorsRepository;
 using MyBooks.Entity.Authors;
+using Newtonsoft.Json;
 
 namespace MyBooks.Pages.AuthorsMaster
 {
@@ -18,10 +22,13 @@ namespace MyBooks.Pages.AuthorsMaster
     public class EditModel : PageModel
     {
         private readonly IAuthorsRepository _repo;
+        private readonly IWebApiConsumerHelper<Authors> _authorHelper;
 
-        public EditModel(IAuthorsRepository repo)
+
+        public EditModel(IAuthorsRepository repo, IWebApiConsumerHelper<Authors> authorHelper)
         {
             _repo = repo;
+            _authorHelper = authorHelper;
         }
 
         [BindProperty]
@@ -33,8 +40,16 @@ namespace MyBooks.Pages.AuthorsMaster
             {
                 return NotFound();
             }
+            if (MyBooks.Entity.Global.GlobalVariables.useWebApi)
+            {
 
-            Authors =await _repo.GetAuthorsById((int)id);
+                Authors = await _authorHelper.ConsumeWebApi($"Authors/{id}", HttpMethod.Get);
+            }
+            else
+            {
+                Authors = await _repo.GetAuthorsById((int)id);
+
+            }
 
             if (Authors == null)
             {
@@ -52,7 +67,16 @@ namespace MyBooks.Pages.AuthorsMaster
                 return Page();
             }
 
-           await _repo.UpdateAuthors(Authors);
+            if (MyBooks.Entity.Global.GlobalVariables.useWebApi)
+            {
+                StringContent content = new StringContent(JsonConvert.SerializeObject(Authors), Encoding.UTF8, "application/json");
+                await _authorHelper.ConsumeWebApi($"Authors/{Authors.AuthorId}", HttpMethod.Put, content);
+            }
+            else
+            {
+                await _repo.UpdateAuthors(Authors);
+
+            }
 
             return RedirectToPage("./Index");
         }

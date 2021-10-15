@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
 
 namespace MyBooks.Pages.account
 {
@@ -14,12 +15,14 @@ namespace MyBooks.Pages.account
     {
         private readonly IAuthenticationService _authservice;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        public readonly IConfiguration _config;
 
 
-        public google_responseModel(IHttpContextAccessor httpContextAccessor, IAuthenticationService authservice)
+        public google_responseModel(IHttpContextAccessor httpContextAccessor, IAuthenticationService authservice, IConfiguration config)
         {
             _authservice = authservice;
             _httpContextAccessor = httpContextAccessor;
+            _config = config;
         }
         public async Task<IActionResult> OnGet(string ReturnUrl)
         {
@@ -37,6 +40,9 @@ namespace MyBooks.Pages.account
                         claim.Type,
                         claim.Value
                     });
+            //MyBooks.Entity.Global.GlobalVariables.UserName = User.Identity.Name;
+            MyBooks.Entity.Global.GlobalVariables.setGlobalVariable(User.Identity.Name, _config);
+
             if (!string.IsNullOrEmpty(ReturnUrl))
             {
                 return Redirect(ReturnUrl);

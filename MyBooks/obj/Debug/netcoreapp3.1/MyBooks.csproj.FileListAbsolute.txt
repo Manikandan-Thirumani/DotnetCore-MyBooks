@@ -8,6 +8,7 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\MyBook
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\MyBooks.pdb
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\MyBooks.Views.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\MyBooks.Views.pdb
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -159,6 +160,9 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\scoped
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.TagHelpers.input.cache
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.TagHelpers.output.cache
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.RazorCoreGenerate.cache
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-login.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-response.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\SignOut.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\AuthorsMaster\Create.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\AuthorsMaster\Delete.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\AuthorsMaster\Details.cshtml.g.cs
@@ -169,8 +173,10 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\BooksMaster\Details.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\BooksMaster\Edit.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\BooksMaster\Index.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Components\BookStatistics\default.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\OrderBooks\Create.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -183,9 +189,6 @@ C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBook
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.dll
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.pdb
 C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\MyBooks.genruntimeconfig.cache
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\OrderBooks\Create.cshtml.g.cs
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\Components\BookStatistics\default.cshtml.g.cs
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-login.cshtml.g.cs
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\google-response.cshtml.g.cs
-C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\obj\Debug\netcoreapp3.1\Razor\Pages\account\SignOut.cshtml.g.cs
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\System.Net.Http.Extensions.dll
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\manikandanT\My-leaining\Source\MyBooks\MyBooks\bin\Debug\netcoreapp3.1\System.Net.Http.Primitives.dll

@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBooks.Data", "MyBooks.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Others", "Others\Others.csproj", "{B1179F32-0852-46FF-A634-4FD966299282}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBooks.WebAPI", "MyBooks.WebAPI\MyBooks.WebAPI.csproj", "{47B6268A-857A-447D-9CD0-B29A1C52839A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{B1179F32-0852-46FF-A634-4FD966299282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1179F32-0852-46FF-A634-4FD966299282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1179F32-0852-46FF-A634-4FD966299282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B6268A-857A-447D-9CD0-B29A1C52839A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B6268A-857A-447D-9CD0-B29A1C52839A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B6268A-857A-447D-9CD0-B29A1C52839A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B6268A-857A-447D-9CD0-B29A1C52839A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
